@@ -115,7 +115,7 @@ namespace Ficha7
 
         #endregion
 
-        #region Exerciocio1_5
+        #region Exercicio1_5
 
         public static void Exercicio1_5()
         {
@@ -136,14 +136,73 @@ namespace Ficha7
 
         #endregion
 
-        #region Exerciocio1_6
+        #region Exercicio1_6
 
         public static void Execicio1_6 ()
         {
+            int num;
 
+            Console.WriteLine("Escreve o piso");
+            num = int.Parse(Console.ReadLine());
+
+            if (num == 3 || num == 5)
+            {
+                Console.WriteLine("Piso avariado");
+            }
+            else if (num == -2 || num == -1 || num == 0 || num == 1|| num == 2 || num == 4 || num == 6)
+            {
+                Console.WriteLine("Piso esta disponivel");
+            }
+            else
+            {
+                Console.WriteLine("Piso não existe");
+            }
+            
         }
 
 
         #endregion
+
+        #region Exercicio1_7
+
+        public static void Exercicio1_7()
+        {
+            double num, resultado = 0;
+                                
+
+            for (double i = 0; i < 10; i++)
+            {
+                Console.WriteLine("Introduza numero");
+                num = double.Parse(Console.ReadLine());
+
+                resultado += num;
+
+                
+                Console.WriteLine("Resultado da soma de dez numero =" + resultado);
+            }
+                       
+            Console.ReadKey();
+            
+        }
+        #endregion
+
+        #region Exercicio1_8
+
+        public static void Exercicio1_8()
+        {
+            string nome;
+            double preço, quantidade, resuproduto, resutotal;
+
+
+             
+
+        }
+
+
+
+
+        #endregion
+
+        
     }
 }
